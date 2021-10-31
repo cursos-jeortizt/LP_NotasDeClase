@@ -1,0 +1,71 @@
+\documentclass[krantz1,ChapterTOCs]{krantz}
+\usepackage{fixltx2e,fix-cm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{yfonts}
+\usepackage{amssymb}
+\usepackage{minted}
+\usemintedstyle{autumn}
+\usepackage{mathtools,algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{listings}
+%\usepackage[dvips]{hyperref}
+
+\frenchspacing
+\tolerance=5000
+
+\makeindex
+
+\include{frontmatter/preamble} %place custom commands and macros here
+
+\begin{document}
+
+\frontmatter
+
+\title{Lenguajes de Programación 
+%in Socio-Environmental Systems, Public Health, and Insurance\\
+%{\Large(Applied Environmental Statistics Series)}
+}
+\author{Jorge Eduardo Ortiz Triviño}
+
+\maketitle
+
+%\include{frontmatter/dedication}
+%\cleardoublepage
+\setcounter{page}{1} %previous pages will be reserved for frontmatter to be added in later.
+\tableofcontents
+%\include{frontmatter/foreword}
+%\include{frontmatter/preface}
+\listoffigures
+%\listoftables
+%\include{frontmatter/contributor}
+%\include{frontmatter/symbollist}
+
+\mainmatter
+\part{TITULO 1}
+\include{chapters/chapter0/ch0}
+\include{chapters/chapter1/ch1}
+\part{TITULO 2}
+\include{chapters/chapter2/ch2}
+\include{chapters/chapter3/ch3}
+\include{chapters/chapter4/ch4}
+\include{chapters/chapter5/ch5}
+\include{chapters/chapter6/ch6}
+\part{TITULO 3}
+\include{chapters/chapter7/ch7}
+\include{chapters/chapter8/ch8}
+
+
+\bibliographystyle{plain}
+\bibliography{bibtex}
+
+\printindex
+
+\end{document}
